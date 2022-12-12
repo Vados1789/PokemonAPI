@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API</title>
+</head>
+<body>
+    <div>
+        <label><h3 class="center">Write from the beginning how many pokemon do you want to see here:</h3></label>
+    </div>
+    <div>
+        <input id="countOfPokemon" type="text" placeholder="count of pokemon max 777" name="countOfPokemon" count-pokemon class="center">
+        <button id="submitShowPokemon" type="submit" onclick="showPokemon()" class="center">Submit count of pokemon</button>
+    </div>
+    <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/pokemon-logo_0.png" class="center" />
+    <div class="center">
+        <input id="input" type="text" placeholder="Search.." name="search" data-search class="center">
+        <button type="submit" class="center">Search</button>
+    </div>
+    <div  onclick="myFunction(this)">
+        <button class="center">Random pokemon</button>
+    </div>
+    <div id="root">
+        <script src="script.js"></script>
+    </div>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            document.location.href = "file:/C:/Projects/C%23/PokemonAPI/randomPokemon.html"
+        }
+    </script>
+</body>
+</html>
